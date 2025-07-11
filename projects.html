@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects | My Portfolio</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: rgba(0,0,0,0.25);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    cursor: default;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+  }
+
+  nav ul li a.active::after,
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  main {
+    flex-grow: 1;
+    max-width: 900px;
+    margin: 60px auto;
+    background: rgba(0,0,0,0.25);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: #f0e6d2;
+  }
+
+  main h2 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #ffd700;
+    text-align: center;
+  }
+
+  ul.project-list {
+    list-style: disc inside;
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+
+  ul.project-list li {
+    margin-bottom: 20px;
+  }
+
+  ul.project-list li strong {
+    color: #fff;
+  }
+
+  ul.project-list li a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  ul.project-list li a:hover {
+    color: #fff;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: rgba(0,0,0,0.25);
+    color: #ddd;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 720px) {
+    main {
+      padding: 30px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MyPortfolio</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>My Projects</h2>
+  <ul class="project-list">
+    <li><strong>Project:</strong>My Camping Website<a href="C:\Users\SL3\Downloads\Oceanofgames.com-Gta_Vice_City\Gta_Vice_City\camping.html">  View</a></li>
+   
